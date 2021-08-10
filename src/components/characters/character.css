@@ -21,3 +21,38 @@
 .form p textarea {
   width: 90%;
 }
+
+.character {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  background-color: honeydew;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+.character p {
+  margin: 5px;
+}
+
+.character button {
+  padding: 2px;
+  margin: 5px;
+  width: 60px;
+  background-color: gold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: hsl(212, 11%, 30%);
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+.character button:hover {
+  background-color: goldenrod;
+}
+
+.character button:active {
+  position: relative;
+  top: 1px;
+}
