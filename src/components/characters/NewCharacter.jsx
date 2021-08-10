@@ -45,7 +45,7 @@ const newCharacter = () => {
           />
         </p>
         <p>
-          <label htmlFor="description">Describe your character:</label>
+          <label htmlFor="description">Describe Character:</label>
           <textarea
             id="description"
             name="description"
@@ -53,7 +53,7 @@ const newCharacter = () => {
           />
         </p>
         <p>
-          <label htmlFor="history">Fill in your backstory:</label>
+          <label htmlFor="history">Create Backstory:</label>
           <textarea id="history" name="history" onChange={handleChange} />
         </p>
         <button>Create Character</button>

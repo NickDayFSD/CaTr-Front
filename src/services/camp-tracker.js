@@ -11,6 +11,7 @@ export const fetchCharacters = async () => {
 export const makeCharacter = async (character) => {
   const res = await fetch(
     'https://campaigntracker.herokuapp.com/api/characters',
+    // 'localhost:7890/api/characters',
     {
       method: 'POST',
       headers: { 'content-type': 'application/json' },

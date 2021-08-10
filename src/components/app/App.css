@@ -1,16 +1,42 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   font-size: xx-large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
   background-color: cornsilk;
-  padding: 15px;
+  color: hsl(212, 11%, 30%);
+  padding: 10px 10px 20px 10px;
+}
+
+.header p {
+  display: flex;
+  flex-direction: column;
+}
+
+.header button {
+  padding: 5px;
+  width: 60px;
+  background-color: gold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: hsl(212, 11%, 30%);
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: goldenrod;
+}
+
+.header button:active {
+  position: relative;
+  top: 1px;
 }
