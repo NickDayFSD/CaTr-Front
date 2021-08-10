@@ -25,10 +25,10 @@ const newCharacter = () => {
     <>
       <form className={styles.form} onSubmit={handleSubmit}>
         <p>
-          <label htmlFor="name">Character Name:</label>
+          <label htmlFor="characterName">Character Name:</label>
           <input
             id="name"
-            name="name"
+            name="characterName"
             placeholder="character name"
             onChange={handleChange}
           />
@@ -54,7 +54,7 @@ const newCharacter = () => {
         </p>
         <p>
           <label htmlFor="history">Create Backstory:</label>
-          <textarea id="history" name="history" onChange={handleChange} />
+          <textarea id="history" name="backstory" onChange={handleChange} />
         </p>
         <button>Create Character</button>
       </form>
