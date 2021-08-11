@@ -8,6 +8,16 @@ export const fetchCharacters = async () => {
   return json;
 };
 
+export const findCharacter = async (id) => {
+  const res = await fetch(
+    `https://campaigntracker.herokuapp.com/api/characters/${id}`
+  );
+
+  const json = await res.json();
+
+  return json;
+};
+
 export const makeCharacter = async (character) => {
   const res = await fetch(
     'https://campaigntracker.herokuapp.com/api/characters',

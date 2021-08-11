@@ -36,6 +36,14 @@
   margin: 5px;
 }
 
+.character div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: 10px;
+}
+
 .character button {
   padding: 2px;
   margin: 5px;
