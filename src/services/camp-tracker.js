@@ -1,0 +1,58 @@
+export const fetchCharacters = async () => {
+  const res = await fetch(
+    'https://campaigntracker.herokuapp.com/api/characters'
+  );
+
+  const json = await res.json();
+
+  return json;
+};
+
+export const findCharacter = async (id) => {
+  const res = await fetch(
+    `https://campaigntracker.herokuapp.com/api/characters/${id}`
+  );
+
+  const json = await res.json();
+
+  return json;
+};
+
+export const makeCharacter = async (character) => {
+  const res = await fetch(
+    'https://campaigntracker.herokuapp.com/api/characters',
+    // 'localhost:7890/api/characters',
+    {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(character)
+    });
+  const newCharacter = res.json();
+  return await newCharacter;
+};
+
+export const updateCharacter = async (character, id) => {
+  const res = await fetch(
+    `https://campaigntracker.herokuapp.com/api/characters/${id}`,
+    {
+      method: 'PUT',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(character)
+    });
+
+  const updatedCharacter = res.json();
+  return await updatedCharacter;
+};
+
+export const deleteCharacter = async (id) => {
+  const res = await fetch(
+    `https://campaigntracker.herokuapp.com/api/characters/${id}`,
+    {
+      method: 'DELETE',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify()
+    });
+
+  const deletedCharacter = res.json();
+  return await deletedCharacter;
+};
